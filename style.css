@@ -1,0 +1,210 @@
+/* Reset dasar */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Segoe UI', sans-serif;
+    background-color: #f1f5f9;
+    color: #333;
+    line-height: 1.6;
+    padding: 0;
+}
+
+/* Header */
+header {
+    background: linear-gradient(135deg, #3b82f6, #60a5fa);
+    color: white;
+    text-align: center;
+    padding: 40px 20px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+header h1 {
+    margin-bottom: 10px;
+    font-size: 2.8rem;
+}
+
+header p {
+    font-size: 1.3rem;
+    opacity: 0.95;
+}
+
+/* Navigasi */
+nav {
+    background-color: #1e40af;
+    text-align: center;
+    padding: 15px 0;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin: 0 15px;
+    font-weight: bold;
+    transition: color 0.3s ease;
+}
+
+nav a:hover {
+    color: #facc15;
+}
+
+/* Container Umum */
+.container {
+    max-width: 900px;
+    margin: 30px auto;
+    background-color: white;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 6px 16px rgba(0, 0, 0, 0.08);
+}
+
+h2 {
+    color: #1e40af;
+    margin-top: 0;
+    margin-bottom: 20px;
+    border-left: 5px solid #3b82f6;
+    padding-left: 10px;
+}
+
+/* Profil Pribadi Grid */
+.profile-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 15px;
+    margin-top: 20px;
+}
+
+.profile-item {
+    background-color: #eff6ff;
+    padding: 14px 16px;
+    border-radius: 10px;
+    font-size: 1rem;
+    border-left: 4px solid #3b82f6;
+}
+
+/* Foto Profil - Centered */
+.profile {
+    text-align: center;
+    margin-bottom: 20px;
+}
+
+.profile-pic {
+    width: 160px;
+    height: 160px;
+    object-fit: cover;
+    border-radius: 50%;
+    border: 4px solid #3b82f6;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+    transition: transform 0.3s ease;
+}
+
+.profile-pic:hover {
+    transform: scale(1.05);
+}
+
+/* Timeline Style */
+.timeline {
+    position: relative;
+    padding: 20px 0;
+}
+
+.timeline::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 20px;
+    width: 4px;
+    background-color: #3b82f6;
+    z-index: 0;
+}
+
+.timeline-item {
+    position: relative;
+    margin-bottom: 30px;
+    padding-left: 60px;
+}
+
+.timeline-item::before {
+    content: '';
+    position: absolute;
+    left: 12px;
+    top: 15px;
+    width: 16px;
+    height: 16px;
+    background-color: #ffffff;
+    border: 4px solid #3b82f6;
+    border-radius: 50%;
+    z-index: 1;
+    transition: all 0.3s ease;
+}
+
+.timeline-item:hover::before {
+    background-color: #facc15;
+    border-color: #f59e0b;
+}
+
+.timeline-content {
+    background-color: #f8fafc;
+    padding: 16px 20px;
+    border-radius: 10px;
+    border-left: 4px solid #3b82f6;
+    transition: transform 0.3s ease;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.timeline-content:hover {
+    transform: translateX(-5px);
+    background-color: #ecfeff;
+}
+
+.timeline-year {
+    font-weight: bold;
+    color: #1e40af;
+    display: block;
+    margin-bottom: 8px;
+    font-size: 14px;
+}
+
+/* Responsive Timeline */
+@media screen and (max-width: 768px) {
+    .timeline::before {
+        left: 10px;
+    }
+
+    .timeline-item {
+        padding-left: 40px;
+    }
+
+    .timeline-item::before {
+        left: 6px;
+        top: 16px;
+    }
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    background-color: #1e40af;
+    color: white;
+    padding: 20px 10px;
+    margin-top: 40px;
+    font-size: 0.95rem;
+}
+.btn {
+  display: inline-block;
+  padding: 7px 10px;
+  background-color: #007BFF;
+  color: white;
+  text-decoration: none;
+  border-radius: 9px;
+  font-weight: bold;
+  transition: background-color 0.3s;
+}
+
+.btn:hover {
+  background-color: #0056b3;
+}

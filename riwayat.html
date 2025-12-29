@@ -1,93 +1,198 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="id">
 <head>
     <meta charset="UTF-8">
-    <title>History – Muhammad Habiburrahman</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet"> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Perjalanan - Kubio Portfolio</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="./style.css">
 </head>
 <body>
-
-<header>
-    <h1>History</h1>
-    <p>My educational and organizational journey</p>
-</header>
-
-<nav>
-    <a href="index.html" style="color: white; text-decoration: none; margin: 0 15px; font-weight: bold">Home</a>
-    <a href="project.html" style="color: white; text-decoration: none; margin: 0 15px; font-weight: bold">Projects</a>
-    <a href="riwayat.html" style="color: #facc15; text-decoration: none; margin: 0 15px; font-weight: bold">History</a>
-</nav>
-
-<div class="container">
-    <h2>Education</h2>
-    <div class="timeline">
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <div class="timeline-year">2014 – 2021</div>
-                <h3>SDN 076 Pekanbaru</h3>
-                <p>Completed elementary education, focusing on foundational knowledge and study skills.</p>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <div class="timeline-year">2021 – 2024</div>
-                <h3>MTs Hasanah Pekanbaru</h3>
-                <p>Junior high school began exploring technology and personal development.</p>
-            </div>
-        </div>
-
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <div class="timeline-year">2024 – Present</div>
-                <h3>SMK Labor Binaan FKIP UNRI, Pekanbaru</h3>
-                <p>Currently studying Software Engineering, with coursework in programming, web design, and application development.</p>
-            </div>
-        </div>
+    <!-- Scroll Progress Bar -->
+    <div class="progress-container">
+        <div class="progress-bar" id="progressBar"></div>
     </div>
 
-    <h2>Organizations</h2>
-    <div class="timeline">
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <div class="timeline-year">2022 – 2023</div>
-                <h3>Student Council (OSIS) Member</h3>
-                <p>Served in the National Defense division at MTs Hasanah, supporting internal school events.</p>
-            </div>
-        </div>
+    <!-- Theme Toggle -->
+    <button class="theme-toggle" id="themeToggle" title="Toggle dark/light theme">
+        <i class="fas fa-moon" id="themeIcon"></i>
+    </button>
 
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <div class="timeline-year">2022 – 2023</div>
-                <h3>PMR (Youth Red Cross) Member</h3>
-                <p>Participated in health-related duties and local competitions.</p>
-            </div>
+    <!-- Header -->
+    <header id="header">
+        <div class="container">
+            <nav>
+                <a href="Home.html" class="logo">
+                    <i class="fas fa-graduation-cap"></i>
+                    Kubio
+                </a>
+                <ul class="nav-links" id="navLinks">
+                    <li><a href="Home.html" class="nav-link">Beranda</a></li>
+                    <li><a href="project.html" class="nav-link">Project</a></li>
+                    <li><a href="riwayat.html" class="nav-link active">Perjalanan</a></li>
+                    <li><a href="error-page.html" class="nav-link">Prestasi</a></li>
+                    <li><a href="Home.html#contect" class="nav-link">Kontak</a></li>
+                </ul>
+                <button class="mobile-menu-toggle" id="mobileMenuToggle" title="Toggle navigation menu">
+                    <i class="fas fa-bars"></i>
+                </button>
+            </nav>
         </div>
+    </header>
 
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <div class="timeline-year">2024 – 2025</div>
-                <h3>Student Council (OSIS) Member</h3>
-                <p>Public Relations division at SMK Labor, assisting in organizing school activities.</p>
-            </div>
+    <!-- Page Header -->
+    <section class="page-header">
+        <div class="container">
+            <h1>Perjalanan Saya</h1>
+            <p>Perjalanan pendidikan dan organisasi saya</p>
         </div>
+    </section>
 
-        <div class="timeline-item">
-            <div class="timeline-content">
-                <div class="timeline-year">2024 – 2025</div>
-                <h3>Forum OSIS Riau Member</h3>
-                <p>Joined the Expert Body – Education & Training Division, supporting provincial-level student events.</p>
+    <!-- History Section -->
+    <section id="history" class="history-section fade-in">
+        <div class="container">
+            <h2 class="section-title">
+                Pendidikan
+                <span class="title-logo"><i class="fas fa-graduation-cap"></i></span>
+            </h2>
+            <div class="journey-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2014 – 2021</div>
+                        <h3>SDN 076 Pekanbaru</h3>
+                        <p>Menyelesaikan pendidikan dasar, dengan fokus pada pengetahuan dasar dan keterampilan belajar.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2021 – 2024</div>
+                        <h3>MTs Hasanah Pekanbaru</h3>
+                        <p>Sekolah menengah pertama mulai menjelajahi teknologi dan pengembangan pribadi.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-school"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024 – Sekarang</div>
+                        <h3>SMK Labor Binaan FKIP UNRI, Pekanbaru</h3>
+                        <p>Saat ini belajar Rekayasa Perangkat Lunak, dengan mata pelajaran pemrograman, desain web, dan pengembangan aplikasi.</p>
+                    </div>
+                </div>
+            </div>
+
+            <h2 class="section-title">
+                Organisasi
+                <span class="title-logo"><i class="fas fa-users"></i></span>
+            </h2>
+            <div class="journey-timeline">
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2022 – 2023</div>
+                        <h3>Anggota Dewan Siswa (OSIS)</h3>
+                        <p>Bertugas di divisi Pertahanan Negara di MTs Hasanah, mendukung acara internal sekolah.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-first-aid"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2022 – 2023</div>
+                        <h3>Anggota PMR (Palang Merah Remaja)</h3>
+                        <p>Berpartisipasi dalam tugas-tugas terkait kesehatan dan kompetisi lokal.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-user-friends"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024 – 2025</div>
+                        <h3>Anggota Dewan Siswa (OSIS)</h3>
+                        <p>Divisi Hubungan Masyarakat di SMK Labor, membantu mengorganisir kegiatan sekolah.</p>
+                    </div>
+                </div>
+
+                <div class="timeline-item">
+                    <div class="timeline-icon">
+                        <i class="fas fa-users-cog"></i>
+                    </div>
+                    <div class="timeline-content">
+                        <div class="timeline-year">2024 – 2025</div>
+                        <h3>Anggota Forum OSIS Riau</h3>
+                        <p>Bergabung dengan Badan Ahli – Divisi Pendidikan & Pelatihan, mendukung acara siswa tingkat provinsi.</p>
+                    </div>
+                </div>
             </div>
         </div>
+    </section>
+
+    <!-- Footer -->
+    <footer>
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-section">
+                    <h3>Tentang Saya</h3>
+                    <p>Siswa yang passionate tentang web development dan networking. Selalu ingin belajar hal baru dan berbagi pengetahuan dengan teman-teman.</p>
+                    <div class="social-links">
+                        <a href="https://github.com/mh1803031-ai" class="social-link" title="GitHub"><i class="fab fa-github"></i></a>
+                        <a href="https://www.linkedin.com/in/muhammad-habiburrahman-0a04b937a/" class="social-link" title="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                        <a href="https://discordapp.com/users/1117029333177999381" class="social-link" title="Discord"><i class="fab fa-discord"></i></a>
+                        <a href="https://www.instagram.com/m_hbib03/" class="social-link" title="Instagram"><i class="fab fa-instagram"></i></a>
+                    </div>
+                </div>
+                <div class="footer-section">
+                    <h3>Link Cepat</h3>
+                    <ul class="footer-links">
+                        <li><a href="Home.html"><i class="fas fa-chevron-right"></i> Beranda</a></li>
+                        <li><a href="project.html"><i class="fas fa-chevron-right"></i> Project</a></li>
+                        <li><a href="riwayat.html"><i class="fas fa-chevron-right"></i> Perjalanan</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Sedang Dipelajari</h3>
+                    <ul class="footer-links">
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> React.js</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Network Security</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Cloud Computing</a></li>
+                        <li><a href="#"><i class="fas fa-chevron-right"></i> Python Programming</a></li>
+                    </ul>
+                </div>
+                <div class="footer-section">
+                    <h3>Kontak</h3>
+                    <ul class="footer-links">
+                        <li><i class="fas fa-envelope"></i> mh1803035@gmail.com</li>
+                        <li><i class="fas fa-map-marker-alt"></i> Pekanbaru, Riau, Indonesia</li>
+                        <li><i class="fas fa-graduation-cap"></i> Student</li>
+                    </ul>
+                </div>
+            </div>
+            <div class="copyright">
+                <p>&copy; 2025 Kubio. Learning Portfolio. Made with <i class="fas fa-heart heart-icon"></i> for Learning</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Back to Top Button -->
+    <div class="back-to-top" id="backToTop">
+        <i class="fas fa-arrow-up"></i>
     </div>
-</div>
 
-<footer>
-    <p>&copy; 2025 Muhammad Habiburrahman. All Rights Reserved.</p>
-</footer>
-
+    <script src="./script.js"></script>
 </body>
 </html>

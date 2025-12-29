@@ -1,0 +1,117 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <title>Sedang Diperbarui — Kubio</title>
+    <link rel="icon" type="image/png" sizes="32x32" href="images/icon-kubio2.png">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        }
+
+        :root {
+            --primary: #4361ee;
+            --light: #f8f9fa;
+            --dark: #2b2d42;
+            --text: #333;
+            --card-shadow: 0 10px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        [data-theme="dark"] {
+            --light: #0f3460;
+            --text: #f5f5f5;
+        }
+
+        body {
+            background-color: var(--light);
+            color: var(--text);
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            padding: 2rem;
+        }
+
+        .maintenance-container {
+            text-align: center;
+            max-width: 600px;
+            background: white;
+            padding: 3rem 2rem;
+            border-radius: 18px;
+            box-shadow: var(--card-shadow);
+        }
+
+        [data-theme="dark"] .maintenance-container {
+            background: #16213e;
+        }
+
+        .maintenance-container i {
+            font-size: 4rem;
+            color: var(--primary);
+            margin-bottom: 1.5rem;
+        }
+
+        .maintenance-container h1 {
+            font-size: 2rem;
+            margin-bottom: 1rem;
+            color: var(--primary);
+        }
+
+        .maintenance-container p {
+            line-height: 1.7;
+            margin-bottom: 1.5rem;
+            color: #666;
+        }
+
+        [data-theme="dark"] .maintenance-container p {
+            color: #ccc;
+        }
+
+        .eta {
+            font-weight: 600;
+            color: var(--primary);
+            font-style: italic;
+            margin: 1.2rem 0;
+        }
+
+        .back-home {
+            display: inline-block;
+            padding: 12px 28px;
+            background-color: var(--primary);
+            color: white;
+            text-decoration: none;
+            border-radius: 50px;
+            font-weight: bold;
+            transition: all 0.3s ease;
+        }
+
+        .back-home:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 6px 15px rgba(67, 97, 238, 0.3);
+        }
+    </style>
+</head>
+<body data-theme="light">
+    <div class="maintenance-container">
+        <i class="fas fa-tools"></i>
+        <h1>Halaman Sedang Diperbarui</h1>
+        <p>
+            Maaf, halaman ini sedang dalam proses perbaikan dan penyempurnaan untuk memberikan pengalaman terbaik.
+        </p>
+        <p class="eta">Perkiraan selesai: <strong>31 Januari 2026</strong></p>
+        <a href="./Home.html" class="back-home">Kembali ke Beranda</a>
+    </div>
+
+    <!-- Opsional: Redirect otomatis setelah beberapa detik (jika diinginkan) -->
+    <script>
+        setTimeout(() => {
+            window.location.href = '/Home.html';
+        }, 10000); // Redirect setelah 10 detik
+    </script>
+</body>
+</html>

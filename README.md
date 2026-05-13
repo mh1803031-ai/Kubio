@@ -1,8 +1,6 @@
  Kubio - AI Powered Web Project
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/your-id-here/deploy-status)](https://kubio.netlify.app)
-
-**Kubio** adalah platform [sebutkan tujuan, misal: pembuat website otomatis / portfolio modern] yang dirancang untuk memberikan pengalaman pengguna yang intuitif dan desain yang responsif.
+**Kubio** adalah platform portofolio pribadi saya dalam bentuk digital
 
 ## 🚀 Demo
 Lihat website yang sudah dideploy di sini: [https://kubio.netlify.app](https://kubio.netlify.app)
@@ -24,5 +22,7 @@ Lihat website yang sudah dideploy di sini: [https://kubio.netlify.app](https://k
 1. Clone repositori ini:
    ```bash
    git clone [https://github.com/username-kamu/kubio.git](https://github.com/username-kamu/kubio.git)
-   ## Lisensi
+
+## Lisensi
 [MIT License](LICENSE)
+

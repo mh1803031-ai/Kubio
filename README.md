@@ -12,8 +12,8 @@ Lihat website yang sudah dideploy di sini: [https://kubio.netlify.app](https://k
 - **Customizable Blocks:** Komponen UI yang mudah dimodifikasi sesuai kebutuhan.
 
 ## 🛠️ Teknologi yang Digunakan
-- **Frontend:** [Contoh: React.js / HTML5 & CSS3]
-- **Styling:** [Contoh: Tailwind CSS]
+- **Frontend:** HTML5 & CSS3
+- **Styling:** Tailwind CSS
 - **Hosting/Deployment:** Netlify
 - **Icons & Assets:** FontAwesome / Unsplash
 

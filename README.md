@@ -21,7 +21,7 @@ Lihat website yang sudah dideploy di sini: [https://kubio.netlify.app](https://k
 
 1. Clone repositori ini:
    ```bash
-   git clone [https://github.com/username-kamu/kubio.git](https://github.com/username-kamu/kubio.git)
+   git clone [https://github.com/mh1803031-ai/kubio.git](https://github.com/mh1803031-ai/kubio.git)
 
 ## Lisensi
 [MIT License](LICENSE)
